@@ -11,7 +11,6 @@ import java.time.Instant;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-
 @Table(name = "tb_categoria")
 @Entity
 public class Categoria {
@@ -21,10 +20,8 @@ public class Categoria {
     private Long id;
     private String name;
 
-
     @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
     private Instant createdAt;
-
 
     @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
     private Instant updateAt;

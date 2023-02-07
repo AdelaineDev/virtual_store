@@ -29,8 +29,6 @@ public class Produto  {
     @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
     private Instant date;
 
-
-
     @ManyToMany
     @JoinTable(name = "tb_produto_categoria",
             joinColumns = @JoinColumn(name = "produto_id"),
